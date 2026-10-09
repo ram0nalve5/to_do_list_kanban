@@ -1,0 +1,116 @@
+/* Definições raiz */
+:root {
+  --cor-primaria: #3b5bdb;
+  --cor-primaria-escura: #2f4ac2;
+  --cor-sidebar: #0f1b3d;
+  --fonte: Verdana, Geneva, sans-serif;
+}
+
+/* Fonte global */
+body {
+  font-family: var(--fonte);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-primaria-escura);
+  border-color: var(--cor-primaria-escura);
+}
+
+/* Cartão de login */
+.card-login {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logotipo no login */
+.logo-login {
+  width: 280px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: var(--cor-sidebar);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.logo-sidebar {
+  width: 180px;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+  border-radius: 6px;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  margin-left: 220px;
+  padding: 32px;
+}
+
+/* Quadro de Kanban */
+.quadro-kanban {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.coluna-kanban {
+  min-width: 250px;
+  max-width: 250px;
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.coluna-kanban h6 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--cor-sidebar);
+}
+
+/* Cards de tarefa */
+.card-tarefa {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-tarefa p {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card-tarefa .acoes {
+  display: flex;
+  gap: 6px;
+}
